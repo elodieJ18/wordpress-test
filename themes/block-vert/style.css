@@ -1,0 +1,249 @@
+/*
+Theme Name: Theme enfant
+Description: Theme enfant de Benoit WPServeur
+Author: Benoit - WPserveur
+Author URI: https://www.wpserveur.net
+Template: block-theme
+Version: 0.1.0
+*/
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+  }
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap);
+  }
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+  }
+
+
+
+  
+
+/*PROMOTION TOP MENU
+********/
+.promotion-produit {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #c18c73;
+    font-size: 14px;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.promotion-produit:hover {
+    color: white;
+    background-color: #b5846d;
+}
+
+
+/*MENU
+*******/
+
+#masthead {
+    background-color: white;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    box-shadow: 0 3px 6px #807e7e1f;
+}
+
+.site-branding a img{
+    width: 80%;
+}
+
+.all-menu {
+    display: flex;
+    width: 68%;
+    margin-left: 17%;
+    justify-content: space-between; 
+}
+
+.main-navigation {
+    display: block;
+    width: 63%;
+
+}
+
+.main-navigation li {
+    margin-right: 56px;
+}
+
+.main-navigation a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-title {
+    margin: 0;
+}
+
+.menu-icon-profil {
+    content: url('http://localhost:8000/wp-content/uploads/2023/06/avatar_compte.png');
+    cursor: pointer;
+} 
+
+.menu-icon-basket {
+    content: url('http://localhost:8000/wp-content/uploads/2023/06/Frame.png');
+    cursor: pointer;
+} 
+
+.avatar a img {  
+    width: 25px;
+
+}
+
+.panier a img {
+    width: 25px;
+}
+
+#menu-item-134 {
+    margin-left: 104px;
+}
+
+ 
+/*TITLE ARTICLE HIDDEN
+********/
+
+.entry-title {
+    display: none;
+}
+
+/*HERO COLUMN ORGANISATION
+*****/
+
+
+.hero-column {
+    display: flex;
+    align-items: center;
+    margin: -2.5em 0 0;
+    width: 68%;
+    margin-left: 17%;
+}
+
+.hero-column img {
+    height: auto;
+    width: 63%;
+    max-width: 100%;
+    margin-left: -58px;
+}
+
+/*HERO TEXT
+********/
+.hero-text-ACF {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 12px;
+    margin-top: 100px;
+
+}
+
+.hero-title-ACF {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    width: 456px;
+    font-size: 26px;
+
+
+}
+
+.hero-block-text-ACF {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    width: 74%;
+    margin-bottom: 25px;
+}
+
+.wp-block-button__link {
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.wp-block-button__link:hover {
+   color: white;
+}
+
+@media (max-width: 1279px) { 
+
+  /*HERO
+  ********/  
+    #menu-item-134 {
+        margin-left: 0px;
+    }
+
+    .main-navigation li {
+        margin-right: 12px;
+    }
+
+    .hero-title-ACF {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .hero-block-text-ACF {
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .wp-block-button__link {
+        border-radius: 10px;
+        font-size: 11px;
+    }
+
+    .hero-column img {
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 720px) { 
+
+    .main-navigation li {
+        margin-right: 0px;
+    }
+    
+    .hero-column {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin: 0.5em 0 0;
+        flex-direction: column-reverse;
+    }
+
+    .hero-title-ACF {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        width: max-content;
+        font-size: 16px;
+    }
+
+    .hero-text-ACF {
+        width: 80%; 
+        row-gap: 12px;
+        margin-top: 0px;
+    }
+
+    .hero-block-text-ACF { 
+        width: 100%; 
+    }
+
+    .hero-column img {
+        margin-left: 0px;
+    }
+}
